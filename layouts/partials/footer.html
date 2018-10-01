@@ -15,9 +15,6 @@
 </footer>
 <div class="fixed-bar">
   <section class="container">
-    {{ with .Site.Params.fixedbarContent }}
-      <p id="privateTriggerText">{{.}}<a id="privateTrigger">Click!</a></p>
-    {{ end }}
     {{ if .Site.Params.snsShare }}
       <div class="sns-shares pc-sns-shares">
         <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer={{ .Permalink }}&ref_src=twsrc%5Etfw&text={{ .Title }} {{ .Site.Title }}&tw_p=tweetbutton&url={{ .Permalink }}"><i class="fab fa-twitter"></i></a>
